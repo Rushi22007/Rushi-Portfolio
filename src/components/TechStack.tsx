@@ -2,7 +2,6 @@ import * as THREE from "three";
 import { useRef, useMemo, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
-import { EffectComposer, N8AO } from "@react-three/postprocessing";
 import {
   BallCollider,
   Physics,
@@ -13,21 +12,18 @@ import {
 
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
-  "/images/react2.webp",
-  "/images/next2.webp",
-  "/images/node2.webp",
-  "/images/express.webp",
-  "/images/mongo.webp",
+  "/images/c.png",
+  "/images/cpp.png",
+  "/images/python.png",
+  "/images/java.png",
   "/images/mysql.webp",
-  "/images/typescript.webp",
-  "/images/javascript.webp",
 ];
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
-const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
+const sphereGeometry = new THREE.SphereGeometry(1, 24, 24);
 
-const spheres = [...Array(30)].map(() => ({
-  scale: [0.7, 1, 0.8, 1, 1][Math.floor(Math.random() * 5)],
+const spheres = [...Array(25)].map(() => ({
+  scale: 0.8, // Uniform medium size for a more professional look
 }));
 
 type SphereProps = {
@@ -172,6 +168,7 @@ const TechStack = () => {
 
       <Canvas
         shadows
+        dpr={[1, 1.5]}
         gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
         camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
         onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
@@ -203,9 +200,6 @@ const TechStack = () => {
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />
-        <EffectComposer enableNormalPass={false}>
-          <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
-        </EffectComposer>
       </Canvas>
     </div>
   );

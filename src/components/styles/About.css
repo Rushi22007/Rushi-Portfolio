@@ -1,7 +1,7 @@
 .about-section {
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   place-items: center;
   position: relative;
   opacity: 1;
@@ -14,6 +14,8 @@
   padding-bottom: 0;
   width: 500px;
   max-width: calc(100% - 15px);
+  margin: 0 auto;
+  text-align: center;
 }
 .about-me h3 {
   font-size: 25px;
@@ -48,7 +50,7 @@
 @media only screen and (min-width: 1025px) {
   .about-section {
     width: var(--cWidth);
-    justify-content: right;
+    justify-content: center;
     max-width: 1920px;
     height: var(--vh);
     padding: 0px;

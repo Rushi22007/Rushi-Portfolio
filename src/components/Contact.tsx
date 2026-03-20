@@ -10,17 +10,31 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href="mailto:rajeshchittyal21@gmail.com" data-cursor="disable">
-                rajeshchittyal21@gmail.com
+              <a 
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=officialrushikesh22@gmail.com&su=Portfolio%20Inquiry" 
+                target="_blank"
+                rel="noopener noreferrer"
+                data-cursor="disable"
+              >
+                officialrushikesh22@gmail.com
+              </a>
+            </p>
+            <h4 style={{ marginTop: "15px" }}>Phone</h4>
+            <p>
+              <a href="tel:+918767599309" data-cursor="disable">
+                +91 8767599309
               </a>
             </p>
             <h4>Education</h4>
-            <p>BSc in Computer Science</p>
+            <p style={{ marginBottom: "2px" }}>B.E. in Artificial Intelligence and Data Science</p>
+            <p style={{ fontSize: "0.85em", marginTop: 0, opacity: 0.8 }}>
+              D Y Patil School of Engineering, Pune
+            </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/raxx21"
+              href="https://github.com/Rushi22007"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -28,7 +42,7 @@ const Contact = () => {
               Github <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/rajesh-chityal-2a70141b3"
+              href="https://www.linkedin.com/in/rushikesh-chamle-15b747372/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -36,15 +50,15 @@ const Contact = () => {
               Linkedin <MdArrowOutward />
             </a>
             <a
-              href="https://x.com/raxx21_official"
+              href="https://leetcode.com/u/hxXPJs8fIb/"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
             >
-              Twitter <MdArrowOutward />
+              Leetcode <MdArrowOutward />
             </a>
             <a
-              href="https://www.instagram.com/therajeshchityal"
+              href="https://www.instagram.com/_rushireddy?igsh=aTJwMjFld3U0aDRh"
               target="_blank"
               data-cursor="disable"
               className="contact-social"
@@ -54,7 +68,7 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Rajesh Chityal</span>
+              Designed and Developed <br /> by <span>Rushikesh Chamle</span>
             </h2>
             <h5>
               <MdCopyright /> 2025

@@ -46,11 +46,13 @@ const Navbar = () => {
           RC
         </a>
         <a
-          href="mailto:rajeshchittyal21@gmail.com"
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=officialrushikesh22@gmail.com&su=Portfolio%20Inquiry"
+          target="_blank"
+          rel="noopener noreferrer"
           className="navbar-connect"
           data-cursor="disable"
         >
-          rajeshchittyal21@gmail.com
+          officialrushikesh22@gmail.com
         </a>
         <ul>
           <li>
